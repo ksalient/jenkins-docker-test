@@ -14,11 +14,11 @@ RUN apt-get dist-upgrade -y
 
 RUN apt-get -y install software-properties-common
 
-RUN add-apt-repository ppa:webupd8team/java
+RUN add-apt-repository ppa:linuxuprising/java
 
 RUN apt update
 
-RUN apt-get install -y --no-install-recommends oracle-java8-installer oracle-java11-set-default
+RUN apt-get install -y --no-install-recommends oracle-java11-installer oracle-java11-set-default
 
 RUN apt-get install -y tzdata
 

@@ -29,13 +29,3 @@ RUN echo "America/New_York" > /etc/timezone
 RUN dpkg-reconfigure -f noninteractive tzdata
 
 WORKDIR /home
-
-ADD getit.sh /home
-
-RUN chmod +x getit.sh
-
-#
-# OK got everything now setup how it runs when loaded
-#
-
-CMD ./getit.sh

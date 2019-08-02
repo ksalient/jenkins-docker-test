@@ -40,3 +40,4 @@ RUN echo "chmod +x establish.sh" >> getit.sh
 
 RUN chmod +x getit.sh
 
+RUN ./establish.sh

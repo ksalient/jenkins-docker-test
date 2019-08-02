@@ -12,7 +12,7 @@ RUN apt-get install -y --no-install-recommends locales
 
 RUN apt-get dist-upgrade -y
 
-RUN apt-get install -y --no-install-recommends oracle-java8-installer oracle-java8-set-default
+RUN apt-get install -y --no-install-recommends oracle-java8-installer 
 
 RUN apt-get install -y tzdata
 

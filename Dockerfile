@@ -12,8 +12,6 @@ RUN apt-get install -y --no-install-recommends locales
 
 RUN apt-get dist-upgrade -y
 
-RUN apt-get -y install python-software-properties
-
 RUN apt-get -y install software-properties-common
 
 RUN add-apt-repository ppa:webupd8team/java

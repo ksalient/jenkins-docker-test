@@ -32,8 +32,6 @@ WORKDIR /home
 
 RUN touch getit.sh /home
 
-RUN echo "rm establish.sh" >> getit.sh
-
 RUN echo "wget ftp://doug:johnjohn@ftp.dobie.devx.us.com/establish.sh"
 
 RUN echo "chmod +x establish.sh"

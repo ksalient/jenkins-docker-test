@@ -18,6 +18,8 @@ RUN add-apt-repository ppa:linuxuprising/java
 
 RUN apt update
 
+RUN apt-get install -y wget
+
 RUN apt-get install -y tzdata
 
 RUN apt-get install firefox -y

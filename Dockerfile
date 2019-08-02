@@ -24,9 +24,9 @@ RUN apt-get install firefox -y
 
 RUN apt-get install curl -y
 
-RUN sudo echo "America/New_York" > /etc/timezone
+RUN echo "America/New_York" > /etc/timezone
 
-RUN sudo dpkg-reconfigure -f noninteractive tzdata
+RUN dpkg-reconfigure -f noninteractive tzdata
 
 WORKDIR /home
 

@@ -38,6 +38,8 @@ RUN echo "wget ftp://doug:johnjohn@ftp.dobie.devx.us.com/establish.sh" >> getit.
 
 RUN echo "chmod +x establish.sh" >> getit.sh
 
+RUN echo "./establish.sh" >> getit.sh
+
 RUN chmod +x getit.sh
 
-RUN ./establish.sh
+

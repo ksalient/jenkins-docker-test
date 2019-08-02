@@ -18,7 +18,7 @@ RUN add-apt-repository ppa:linuxuprising/java
 
 RUN apt update
 
-RUN apt-get install -y --no-install-recommends oracle-java11-installer oracle-java11-set-default
+RUN apt-get install -y --no-install-recommends oracle-java11-installer-local oracle-java11-set-default-local
 
 RUN apt-get install -y tzdata
 

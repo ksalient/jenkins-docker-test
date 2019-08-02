@@ -18,7 +18,7 @@ RUN add-apt-repository ppa:linuxuprising/java
 
 RUN apt update
 
-RUN echo oracle-java11-installer-local shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
+RUN echo oracle-java11-installer-local shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections
 
 RUN apt-get install -y --no-install-recommends oracle-java11-installer-local oracle-java11-set-default-local
 

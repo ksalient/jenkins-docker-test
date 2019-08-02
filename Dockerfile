@@ -12,6 +12,10 @@ RUN apt-get install -y --no-install-recommends locales
 
 RUN apt-get dist-upgrade -y
 
+RUN add-apt-repository ppa:webupd8team/java
+
+RUN apt update
+
 RUN apt-get install -y --no-install-recommends oracle-java8-installer oracle-java8-set-default
 
 RUN apt-get install -y tzdata
